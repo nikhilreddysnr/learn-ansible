@@ -1,0 +1,11 @@
+- name: "Variables"
+  hosts: local
+  connection: local
+  vars:
+    course: "DevSecOps"
+    from: "Siva Kumar Reddy"
+    duration: "100hrs"
+  tasks: 
+  - name: "Accessing Variables"
+    debug:
+      msg: "Hi!! I am Learning {{ course }}. Trainer is {{ from }} and the duration of the course is {{ duration }}"
