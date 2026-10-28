@@ -1,0 +1,7 @@
+- name: "Print greeting"
+  hosts: local
+  connection: local
+  tasks:
+  - name: "Print Greeting"
+    debug:
+      msg: "Hello {{person_name}}"
