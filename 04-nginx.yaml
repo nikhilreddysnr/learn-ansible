@@ -1,0 +1,7 @@
+- name: "Install and Start Nginx"
+  hosts: frontend
+  tasks:
+  - name: "Install Nginx"
+    package:
+      name: nginx
+      state: present
