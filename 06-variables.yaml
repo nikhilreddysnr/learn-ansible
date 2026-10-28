@@ -1,0 +1,19 @@
+- name: "Task Level Variables"
+  hosts: local
+  connection: local
+  vars:
+    course: "DevSecOps"
+    trainer: "Siva Kumar Reddy"
+    duration: "100hrs"
+  tasks: 
+  - name: "Parent Variables"
+    debug:
+      msg: "Hi!! I am Learning {{ course }}. Trainer is {{ trainer }} and the duration of the course is {{ duration }}"
+
+  - name: "Task Level Variables"
+    vars:
+      course: "Java"
+      trainer: "Raghu"
+      duration: "10hrs"
+    debug:
+      msg: "Hi!! I am Learning {{ course }}. Trainer is {{ trainer }} and the duration of the course is {{ duration }}"
