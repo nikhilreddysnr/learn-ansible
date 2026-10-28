@@ -2,8 +2,10 @@
   hosts: local
   connection: local
   tasks:
-  - name: "Print Hello World. default msg"
-    debug:
-  
-  - name: "Print A Random Message"
-    debug:  "Hi.How Are You?"
+    - name: "Print Hello World. default msg"
+      debug:
+        msg: "Hello World"
+
+    - name: "Print A Random Message"
+      debug: 
+        msg: "Hi.How Are You?"
