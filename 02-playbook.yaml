@@ -1,0 +1,6 @@
+- name: "Print a Message"
+  hosts: local
+  connection: local
+  tasks:
+  - name: "Print Hello World. default msg"
+    debug:
