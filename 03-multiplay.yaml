@@ -1,0 +1,24 @@
+- name: "MultiPlayBook Play-1"
+  hosts: local
+  connection: local
+  tasks:
+  - name: "Play-1 and Task-1"
+    debug: 
+      msg: "Play-1 and Task-1"
+    
+  - name: "Play-1 and Task-2"
+    debug: 
+      msg: "Play-1 and Task-2"
+    
+
+- name: "MultiPlayBook Play-2"
+  hosts: local
+  connection: local
+  tasks:
+  - name: "Play-2 and Task-1"
+    debug: 
+      msg: "Play-2 and Task-1"
+    
+  - name: "Play-2 and Task-2"
+    debug: 
+      msg: "Play-2 and Task-2"
