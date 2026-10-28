@@ -4,7 +4,6 @@
   tasks:
   - name: "Print Hello World. default msg"
     debug:
-      msg:
-  tasks:
+  
   - name: "Print A Random Message"
-    debug: "Hi.How Are You?"
+    debug:  "Hi.How Are You?"
