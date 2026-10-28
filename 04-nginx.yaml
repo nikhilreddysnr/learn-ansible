@@ -1,5 +1,6 @@
 - name: "Install and Start Nginx"
   hosts: frontend
+  become: true
   tasks:
   - name: "Install Nginx"
     package:
